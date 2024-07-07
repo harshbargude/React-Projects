@@ -1,8 +1,6 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGear } from '@fortawesome/free-solid-svg-icons'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
-import { faBell } from '@fortawesome/free-solid-svg-icons'
+import { faGear,faUser,faBell } from '@fortawesome/free-solid-svg-icons'
 const Navigation = () => {
     return (
         <div>
