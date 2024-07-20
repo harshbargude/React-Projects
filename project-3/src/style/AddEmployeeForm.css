@@ -12,12 +12,17 @@
   }
   
   .popup-inner {
-    background: white;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
+    width: 400px;
     max-width: 80%;
+    min-height: 200px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     z-index: 1001; /* Ensure it's on top of the overlay */
+  }  
+
+  input{
+    width: 100%;
   }
-  

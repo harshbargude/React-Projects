@@ -32,45 +32,45 @@ const EditEmployee = ({ employee, onClose, onSubmit }) => {
         <div className="popup">
             <div className="popup-inner">
                 <h2>Edit Employee Details</h2>
-                <form onSubmit={handleFormSubmit}>
-                    <label>
-                        Name:
-                        <input
-                            type="text"
-                            name="name"
-                            required
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                        />
-                    </label>
-                    <br />
-                    <label>
-                        Email:
-                        <input
-                            type="email"
-                            name="email"
-                            required
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                        />
-                    </label>
-                    <br />
-                    <label>
-                        Phone:
-                        <input
-                            type="text"
-                            name="phone"
-                            required
-                            value={phone}
-                            onChange={(e) => setPhone(e.target.value)}
-                        />
-                    </label>
-                    <br />
-                    <button type="submit">Submit</button>
-                    <button type="button" onClick={onClose}>
-                        Close
-                    </button>
-                </form>
+                <div className="formDiv">
+                    <form onSubmit={handleFormSubmit}>
+                            <input
+                                type="text"
+                                name="name"
+                                required
+                                value={name}
+                                placeholder="Employee Name..."
+                                onChange={(e) => setName(e.target.value)}
+                            />
+                        <br />
+                        <label>
+                            Email:
+                            <input
+                                type="email"
+                                name="email"
+                                required
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                        </label>
+                        <br />
+                        <label>
+                            Phone:
+                            <input
+                                type="text"
+                                name="phone"
+                                required
+                                value={phone}
+                                onChange={(e) => setPhone(e.target.value)}
+                            />
+                        </label>
+                        <br />
+                        <button type="submit">Submit</button>
+                        <button type="button" onClick={onClose}>
+                            Close
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     );
