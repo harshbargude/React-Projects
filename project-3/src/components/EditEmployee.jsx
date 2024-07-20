@@ -34,6 +34,8 @@ const EditEmployee = ({ employee, onClose, onSubmit }) => {
                 <h2>Edit Employee Details</h2>
                 <div className="formDiv">
                     <form onSubmit={handleFormSubmit}>
+                        <label>
+                            Name:
                             <input
                                 type="text"
                                 name="name"
@@ -42,6 +44,7 @@ const EditEmployee = ({ employee, onClose, onSubmit }) => {
                                 placeholder="Employee Name..."
                                 onChange={(e) => setName(e.target.value)}
                             />
+                        </label>
                         <br />
                         <label>
                             Email:
