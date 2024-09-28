@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
-import "../style/AddEmployeeForm.css";
+// import "../style/AddEmployeeForm.css";
 
 const EditEmployee = ({ employee, onClose, onSubmit }) => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
 
-    
+
 
     useEffect(() => {
         if (employee) {
@@ -32,46 +32,45 @@ const EditEmployee = ({ employee, onClose, onSubmit }) => {
         <div className="popup">
             <div className="popup-inner">
                 <h2>Edit Employee Details</h2>
-                <div className="formDiv">
+                <div className="formDivEdit">
                     <form onSubmit={handleFormSubmit}>
-                        <label>
-                            Name:
-                            <input
-                                type="text"
-                                name="name"
-                                required
-                                value={name}
-                                placeholder="Employee Name..."
-                                onChange={(e) => setName(e.target.value)}
-                            />
-                        </label>
+
+                        <input
+                            type="text"
+                            name="name"
+                            required
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                        />
+
                         <br />
-                        <label>
-                            Email:
-                            <input
-                                type="email"
-                                name="email"
-                                required
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                            />
-                        </label>
+
+                        <input
+                            type="email"
+                            name="email"
+                            required
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+
                         <br />
-                        <label>
-                            Phone:
-                            <input
-                                type="text"
-                                name="phone"
-                                required
-                                value={phone}
-                                onChange={(e) => setPhone(e.target.value)}
-                            />
-                        </label>
+
+                        <input
+                            type="text"
+                            name="phone"
+                            required
+                            value={phone}
+                            onChange={(e) => setPhone(e.target.value)}
+                        />
+
                         <br />
-                        <button type="submit">Submit</button>
-                        <button type="button" onClick={onClose}>
-                            Close
-                        </button>
+                        <div className="editDiv-Button">
+                            <button type="button"  onClick={onClose}>
+                                Close
+                            </button>
+                            <button type="submit" id="ButtonSubmit2">Submit</button>
+
+                        </div>
                     </form>
                 </div>
             </div>

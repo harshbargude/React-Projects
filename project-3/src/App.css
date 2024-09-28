@@ -102,13 +102,36 @@ nav ul{
     align-content: center;
 }
 
-.add-button button{
+.add-button button {
+    all: unset;
+    background-color: #3737ff;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    padding: 6px 18px;
+}
+.editDiv-Button button {
+    all: unset;
+    background-color: #3737ff;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    padding: 6px 18px;
+}
+#ButtonSubmit{
     all: unset;
     background-color: #01008A;
     font-size: 15px;
     font-weight: bold;
     color: white;
-
+    padding: 6px 18px;
+}
+#ButtonSubmit2{
+    all: unset;
+    background-color: #01008A;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
     padding: 6px 18px;
 }
 
@@ -116,4 +139,16 @@ nav ul{
     margin-top: 56px;
     height: 344px;
     background-color: #7474ff1d;
+}
+.formDivEdit form input{
+    all:unset;
+    border: 5px solid #abdfff;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(235, 235, 255);
+    width: -webkit-fill-available;
+}
+.editDiv-Button{
+    display: flex;
+    justify-content: space-between;
 }

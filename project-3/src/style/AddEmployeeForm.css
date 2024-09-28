@@ -26,3 +26,19 @@
   input{
     width: 100%;
   }
+
+ 
+  
+  .formDiv form input{
+    all:unset;
+    border: 5px solid #ababff;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #d6d6fa;
+    width: -webkit-fill-available;
+  }
+
+  .formButton-Div{
+    display: flex;
+    justify-content: space-between;
+  }
